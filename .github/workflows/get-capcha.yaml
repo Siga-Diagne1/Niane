@@ -9,7 +9,6 @@ on:
         default: "https://app.blasteronline.com/assets/captcha/1670875761.1452.jpg?r=74"
 name: Get captcha
 jobs:
-  get:
     name: Get captcha
     runs-on: ubuntu-22.04
     strategy:
