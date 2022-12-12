@@ -1,6 +1,2 @@
 fichier3
-<<<<<<< HEAD
-1.5+1.5=3
-=======
-1+2=3
->>>>>>> 53aa98843a07a9289a8a1e067a732ef5082984ae
+developement de la version 2
