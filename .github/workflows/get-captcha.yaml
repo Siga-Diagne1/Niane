@@ -21,9 +21,9 @@ jobs:
       - run: sudo apt update
       - run: echo $link; 
         env:
-          link: ${{ github.event.inputs.link }}
+          link: $link{{ github.event.inputs.link }}
       - run: pip install requests
-      - run: python main.py
+      - run: python main.py $link
         env:
-          link: ${{ github.event.inputs.link }}
+          link: $link{{ github.event.inputs.link }}
       
