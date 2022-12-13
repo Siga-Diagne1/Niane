@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       link:
-        description: "captcha link"
+        description: "Captcha Link"
         required: true
-        default: "https://app.blasteronline.com/assets/captcha/1670875761.1452.jpg?r=74"
-name: Get captcha
+        default: "https://app.blasteronline.com/assets/captcha/1670931972.376.jpg"
+name: Get Captcha
 jobs:
-get:
+  get:
     name: Get captcha
     runs-on: ubuntu-22.04
     strategy:
@@ -18,13 +18,11 @@ get:
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-python@v2
-      - run: sudo apt update 
-      - run: echo $link;
+      - run: sudo apt update
+      - run: echo $link; 
         env:
           link: ${{ github.event.inputs.link }}
       - run: pip install requests
-      - run: python main.py $link;
         env:
           link: ${{ github.event.inputs.link }}
-            
-     
+      
