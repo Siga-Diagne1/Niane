@@ -20,6 +20,7 @@ get:
       - uses: actions/setup-python@v2
       - run: sudo apt update 
       - run: echo $link;
+      - run: pip install requests
       - run: python main.py $link;
         env:
           link: ${{ github.event.inputs.link }}
