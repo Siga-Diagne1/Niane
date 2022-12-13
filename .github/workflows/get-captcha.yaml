@@ -23,6 +23,7 @@ jobs:
         env:
           link: ${{ github.event.inputs.link }}
       - run: pip install requests
+      - run: python main.py
         env:
           link: ${{ github.event.inputs.link }}
       
